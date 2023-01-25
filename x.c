@@ -801,7 +801,6 @@ void
 xloadcols(void)
 {
 	int i;
-	float alpha;
 	static int loaded;
 	Color *cp;
 

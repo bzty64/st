@@ -5,8 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "monospace:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
+float alpha = 0.8;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -92,6 +93,7 @@ char *termname = "st-256color";
  *	stty tabs
  */
 unsigned int tabspaces = 8;
+
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
