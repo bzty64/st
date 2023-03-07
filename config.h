@@ -5,8 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:pixelsize=14:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "monospace:pixelsize=21:antialias=true:autohint=true";
+static char *font2[] = { "FontAwesome:pixelsize=12:antialias=true:autohint=true" };
+static int borderpx = 0;
 float alpha = 0.8;
 
 /*
@@ -109,11 +110,11 @@ typedef struct {
  */
 static const ColorScheme schemes[] = {
 	// st (dark)
-	{{"black", "red3", "green3", "yellow3",
-	  "blue2", "magenta3", "cyan3", "gray90",
-	  "gray50", "red", "green", "yellow",
-	  "#5c5cff", "magenta", "cyan", "white",
-	  [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
+	{{"#0a0a0a", "#ebebeb", "#ebebeb", "#ebebeb",
+	  "#ebebeb", "#ebebeb", "#ebebeb", "#ebebeb",
+	  "#ebebeb", "#ebebeb", "#ebebeb", "#ebebeb",
+	  "#ebebeb", "#ebebeb", "#ebebeb", "#ebebeb",
+	  [256]="#ebebeb", "#ebebeb"}, 7, 0, 256, 257},
 
 	// Alacritty (dark)
 	{{"#1d1f21", "#cc6666", "#b5bd68", "#f0c674",
@@ -166,7 +167,7 @@ static const ColorScheme schemes[] = {
 };
 
 static const char * const * colorname;
-int colorscheme = 1;
+int colorscheme = 0;
 
 /*
  * Default colors (colorname index)
@@ -244,8 +245,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY, 							XK_k,           kscrollup,      {.i =  1} },
-	{ MODKEY, 							XK_j,           kscrolldown,    {.i =  1} },
+	{ MODKEY, 				XK_k,           kscrollup,      {.i =  1} },
+	{ MODKEY, 				XK_j,           kscrolldown,    {.i =  1} },
 	{ TERMMOD,              XK_K,           zoom,           {.f = +1} },
 	{ TERMMOD,              XK_J,           zoom,           {.f = -1} },
 	{ MODKEY,               XK_1,           selectscheme,   {.i =  0} }, /* Colorscheme */
