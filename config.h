@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:pixelsize=21:antialias=true:autohint=true";
-static char *font2[] = { "FontAwesome:pixelsize=12:antialias=true:autohint=true" };
+static char *font = "monospace:pixelsize=22:antialias=true:autohint=true";
+static char *font2[] = { "FontAwesome:pixelsize=20:antialias=true:autohint=true" };
 static int borderpx = 0;
 float alpha = 0.8;
 
@@ -110,10 +110,10 @@ typedef struct {
  */
 static const ColorScheme schemes[] = {
 	// st (dark)
-	{{"#0a0a0a", "#ebebeb", "#ebebeb", "#ebebeb",
-	  "#ebebeb", "#ebebeb", "#ebebeb", "#ebebeb",
-	  "#ebebeb", "#ebebeb", "#ebebeb", "#ebebeb",
-	  "#ebebeb", "#ebebeb", "#ebebeb", "#ebebeb",
+	{{"#0a0a0a", "#cccccc", "#cccccc", "#cccccc",
+	  "#cccccc", "#cccccc", "#cccccc", "#cccccc",
+	  "#cccccc", "#cccccc", "#cccccc", "#cccccc",
+	  "#cccccc", "#cccccc", "#cccccc", "#cccccc",
 	  [256]="#ebebeb", "#ebebeb"}, 7, 0, 256, 257},
 
 	// Alacritty (dark)
@@ -245,8 +245,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY, 				XK_k,           kscrollup,      {.i =  1} },
-	{ MODKEY, 				XK_j,           kscrolldown,    {.i =  1} },
+	{ MODKEY, 				XK_k,           kscrollup,      {.i =  5} },
+	{ MODKEY, 				XK_j,           kscrolldown,    {.i =  5} },
 	{ TERMMOD,              XK_K,           zoom,           {.f = +1} },
 	{ TERMMOD,              XK_J,           zoom,           {.f = -1} },
 	{ MODKEY,               XK_1,           selectscheme,   {.i =  0} }, /* Colorscheme */
