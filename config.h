@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:pixelsize=22:antialias=true:autohint=true";
-static char *font2[] = { "FontAwesome:pixelsize=20:antialias=true:autohint=true" };
+static char *font = "Hack Nerd Font:pixelsize=18:style=Regular:antialias=true:autohint=true";
+static char *font2[] = { "JoyPixels:pixelsize=18:style=Regular:antialias=true:autohint=true" };
 static int borderpx = 0;
-float alpha = 0.8;
+float alpha = 0.94;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -167,7 +167,7 @@ static const ColorScheme schemes[] = {
 };
 
 static const char * const * colorname;
-int colorscheme = 0;
+int colorscheme = 1;
 
 /*
  * Default colors (colorname index)
