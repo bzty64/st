@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack Nerd Font:pixelsize=18:style=Regular:antialias=true:autohint=true";
-static char *font2[] = { "JoyPixels:pixelsize=18:style=Regular:antialias=true:autohint=true" };
+static char *font = "FiraCodeNerdFont:pixelsize=17:style=Regular:antialias=true:autohint=true";
+static char *font2[] = { "Noto Color Emoji:pixelsize=18:style=Regular:antialias=true:autohint=true" };
 static int borderpx = 0;
 float alpha = 0.94;
 
@@ -117,25 +117,37 @@ static const ColorScheme schemes[] = {
 	  [256]="#ebebeb", "#ebebeb"}, 7, 0, 256, 257},
 
 	// Alacritty (dark)
-	{{"#1d1f21", "#cc6666", "#b5bd68", "#f0c674",
+	{{"#0a0a0a", "#cc6666", "#b5bd68", "#f0c674",
 	  "#81a2be", "#b294bb", "#8abeb7", "#c5c8c6",
 	  "#666666", "#d54e53", "#b9ca4a", "#e7c547",
 	  "#7aa6da", "#c397d8", "#70c0b1", "#eaeaea",
 	  [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
 
-	// One Half dark
-	{{"#282c34", "#e06c75", "#98c379", "#e5c07b",
-	  "#61afef", "#c678dd", "#56b6c2", "#dcdfe4",
-	  "#282c34", "#e06c75", "#98c379", "#e5c07b",
-	  "#61afef", "#c678dd", "#56b6c2", "#dcdfe4",
-	  [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
+	// Belge
+	{{"#252525",
+    "#ef6769",
+    "#a6e22e",
+    "#fd971f",
+    "#6495ed",
+    "#deb887",
+    "#b0c4de",
+    "#dbdcdc",
+    "#454545",
+    "#fc7ca5",
+    "#b6e354",
+    "#fd971f",
+    "#87ceeb",
+    "#996600",
+    "#87ceeb",
+    "#fdfdfd",
+	  [256]="#ffffff", "#000000"}, 7, 0, 256, 257},
 
-	// One Half light
-	{{"#fafafa", "#e45649", "#50a14f", "#c18401",
-      "#0184bc", "#a626a4", "#0997b3", "#383a42",
-	  "#fafafa", "#e45649", "#50a14f", "#c18401",
-	  "#0184bc", "#a626a4", "#0997b3", "#383a42",
-	  [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
+	// Kanagawa
+	{{"#0d0c0c", "#c4746e", "#8a9a7b", "#c4b28a",
+    "#8ba4b0", "#a292a3", "#8ea4a2", "#c8c093",
+	  "#a6a69c", "#e46876", "#87a987", "#e6c384",
+	  "#7fb4ca", "#938aa9", "#7aa89f", "#c5c9c5",
+	  [256]="#c5c9c5", "#181616"}, 7, 0, 256, 257},
 
 	// Solarized dark
 	{{"#073642", "#dc322f", "#859900", "#b58900",
@@ -167,7 +179,7 @@ static const ColorScheme schemes[] = {
 };
 
 static const char * const * colorname;
-int colorscheme = 1;
+int colorscheme = 3;
 
 /*
  * Default colors (colorname index)
