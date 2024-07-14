@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCodeNerdFont:pixelsize=17:style=Regular:antialias=true:autohint=true";
-static char *font2[] = { "Noto Color Emoji:pixelsize=18:style=Regular:antialias=true:autohint=true" };
+static char *font = "JetBrainsMonoNL Nerd Font Mono:pixelsize=18:style=Regular:antialias=true:autohint=true";
+static char *font2[] = { "JoyPixels:pixelsize=20:style=Regular:antialias=true:autohint=true" };
 static int borderpx = 0;
-float alpha = 0.94;
+float alpha = 1;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -124,30 +124,18 @@ static const ColorScheme schemes[] = {
 	  [256]="#cccccc", "#555555"}, 7, 0, 256, 257},
 
 	// Belge
-	{{"#252525",
-    "#ef6769",
-    "#a6e22e",
-    "#fd971f",
-    "#6495ed",
-    "#deb887",
-    "#b0c4de",
-    "#dbdcdc",
-    "#454545",
-    "#fc7ca5",
-    "#b6e354",
-    "#fd971f",
-    "#87ceeb",
-    "#996600",
-    "#87ceeb",
-    "#fdfdfd",
+	{{"#252525","#ef6769","#a6e22e","#fd971f",
+    "#6495ed","#deb887","#b0c4de","#dbdcdc",
+    "#454545","#fc7ca5","#b6e354","#fd971f",
+    "#87ceeb","#996600","#87ceeb","#fdfdfd",
 	  [256]="#ffffff", "#000000"}, 7, 0, 256, 257},
 
 	// Kanagawa
 	{{"#0d0c0c", "#c4746e", "#8a9a7b", "#c4b28a",
-    "#8ba4b0", "#a292a3", "#8ea4a2", "#c8c093",
+    "#8ba4b0", "#a292a3", "#8ea4a2", "#c5c9c5",
 	  "#a6a69c", "#e46876", "#87a987", "#e6c384",
-	  "#7fb4ca", "#938aa9", "#7aa89f", "#c5c9c5",
-	  [256]="#c5c9c5", "#181616"}, 7, 0, 256, 257},
+	  "#7fb4ca", "#938aa9", "#7aa89f", "#ffffff",
+	  [256]="#ffffff", "#000000"}, 7, 0, 256, 257},
 
 	// Solarized dark
 	{{"#073642", "#dc322f", "#859900", "#b58900",
